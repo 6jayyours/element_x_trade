@@ -1,3 +1,6 @@
+"use client";
+
+import { Fade } from "react-awesome-reveal";
 import React from "react";
 import ProductCard from "./ProductCard";
 
@@ -8,7 +11,7 @@ const productItems = [
     name: "Red Chilli",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -17,7 +20,7 @@ const productItems = [
     name: "Black Pepper",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -26,7 +29,7 @@ const productItems = [
     name: "Wheat",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -35,7 +38,7 @@ const productItems = [
     name: "Chick Pea",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -44,7 +47,7 @@ const productItems = [
     name: "Corn",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -53,7 +56,7 @@ const productItems = [
     name: "Millet",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -62,7 +65,7 @@ const productItems = [
     name: "Spinach",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
   {
@@ -71,7 +74,7 @@ const productItems = [
     name: "Nuts",
     description:
       "Ideal for enhancing dishes with its intense heat and rich aroma.",
-    link: "/",
+    link: "/bid",
     codepen: "/",
   },
 ];
@@ -80,16 +83,30 @@ const Elements = () => {
   return (
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl-mb-16 text-center mx-auto">
-          Our Products
-        </h2>
+        <Fade
+          direction="up"
+          delay={400}
+          cascade
+          damping={1e-1}
+          triggerOnce={true}
+        >
+          <h2 className="section-title mb-8 xl-mb-16 text-center mx-auto">
+            Our Products
+          </h2>
+        </Fade>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 ">
-          {productItems.map((product) => {
-            return (
-              <ProductCard product={product} />
-            )
-          })}
+          <Fade
+            direction="up"
+            delay={600}
+            cascade
+            damping={1e-1}
+            triggerOnce={true}
+          >
+            {productItems.map((product) => {
+              return <ProductCard product={product} />;
+            })}
+          </Fade>
         </div>
       </div>
     </section>
