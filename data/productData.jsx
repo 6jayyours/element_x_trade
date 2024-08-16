@@ -1,0 +1,60 @@
+const productsData = [
+    {
+      image: '/redchilli.jpg',
+      category: 'spices',
+      name: 'Red Chilli',
+      description: 'A spicy addition to your dishes.',
+      link: '/bid',
+      codepen: '/',
+    },
+    {
+      image: '/blackpepper.jpg',
+      category: 'spices',
+      name: 'Black Pepper',
+      description: 'Aromatic black peppercorns for seasoning.',
+      link: '/bid',
+      codepen: '/',
+    },
+    {
+      image: '/chickpea.jpg',
+      category: 'legumes',
+      name: 'Chickpea',
+      description: 'High-protein chickpeas, perfect for curries.',
+      link: '/bid',
+      codepen: '/',
+    },
+    {
+      image: '/corn.jpg',
+      category: 'grains',
+      name: 'Corn',
+      description: 'Sweet and juicy corn kernels.',
+      link: '/bid',
+      codepen: '/',
+    },
+    {
+      image: '/millet.jpg',
+      category: 'grains',
+      name: 'Millet',
+      description: 'Nutritious and gluten-free millet grains.',
+      link: '/bid',
+      codepen: '/',
+    },
+    {
+      image: '/nuts.jpg',
+      category: 'nuts',
+      name: 'Mixed Nuts',
+      description: 'A healthy mix of various nuts.',
+      link: '/bid',
+      codepen: '/',
+    },
+    {
+      image: '/wheat.jpg',
+      category: 'grains',
+      name: 'Wheat',
+      description: 'Whole wheat grains, perfect for flour.',
+      link: '/bid',
+      codepen: '/',
+    },
+  ];
+
+  export default productsData;

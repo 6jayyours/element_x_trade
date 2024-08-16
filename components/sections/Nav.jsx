@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import React from 'react'
 
 //next hooks
+import { usePathname } from 'next/navigation'
+import { motion } from 'framer-motion'
 
 const links = [
     {path: '/', name:"Home"},
     {path: '/products', name:"Products"},
     {path: '/services', name:"Services"},
     {path: '/about', name:"Meet Us"},
-    {path: '/contact', name:"Reach Out"},
     {path: '/bid', name:"Request a bid"},
 ]
 
@@ -26,6 +26,15 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
                     key={index}
                     className={`capitalize ${linkStyles}`}
                     >
+                        {link.path === path && (
+                            <motion.span
+                            initial={{y: '-100%'}}
+                            animate={{y: 0}}
+                            transition={{ type: 'tween'}}
+                            layoutId='underline'
+                            className={`${underlineStyles}`}
+                             />
+                        )}
                     {link.name}
                     </Link>
                 )
