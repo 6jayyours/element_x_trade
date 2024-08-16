@@ -50,13 +50,13 @@ const Hero = () => {
           {/**banner image */}
           <div className="hidden xl:flex relative">
             <HeroImg
-              imgSrc="/shipping.jpg"
+              imgSrc="/shipping.png"
               containerStyles="w-[550px] h-[475px] bg-no-repeat relative bg-bottom"
             />
           </div>
         </div>
         {/** badge section*/}
-        <div className=" sm:py-32 ">
+        <div className=" sm:py-32 mt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3 ">
               {/**Badge 1 */}
