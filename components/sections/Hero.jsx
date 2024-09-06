@@ -34,9 +34,9 @@ const Hero = () => {
               damping={1e-1}
               triggerOnce={true}
             >
-              <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-                Element x trade
-              </div>
+              {/* <div className="text-md uppercase font-extrabold mb-4 text-primary tracking-[4px]">
+                BRODMARGA
+              </div> */}
             </Fade>
 
             <Fade
