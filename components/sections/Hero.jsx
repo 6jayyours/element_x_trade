@@ -22,7 +22,7 @@ import Badge from "./Badge";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[auto] bg-bottom">
+    <section className="py-12 xl:py-24 h-[auto] ">
       <div className="container mx-auto ">
         <div className="flex justify-between gap-x-8">
           {/**left side content */}

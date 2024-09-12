@@ -13,7 +13,7 @@ const Bid = () => {
               <span className="w-[30px] h-[2px] bg-primary"></span>
               Hello
             </div>
-            <h1 className="h1 max-w-md mb-8">Contact Us for Product Pricing</h1>
+            <h1 className="h1 max-w-md mb-8">Contact Us for join hands</h1>
             <p className="subtitle max-w-[400px]">
               Thank you for considering our products. We appreciate your
               interest and look forward to providing you with a competitive

@@ -9,7 +9,7 @@ const links = [
     {path: '/', name:"Home"},
     {path: '/products', name:"Products"},
     {path: '/about', name:"Meet Us"},
-    {path: '/bid', name:"Request a bid"},
+    {path: '/bid', name:"Request a quote"},
 ]
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
